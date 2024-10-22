@@ -40,6 +40,7 @@ import PaginationDetails from './components/PaginationDetails';
 import TestimonialDetails from './components/TestimonialDetails';
 import Footer from './components/Footer';
 import SpinnerDetailsPage from './components/SpinnerDetailsPage';
+import Faq from './components/Faq';
 
 const App: React.FC = () => {
   return (
@@ -77,16 +78,15 @@ const App: React.FC = () => {
         <Route path='/contact-details' element={<ContactUsDetailsPage />} />
         <Route path='/pagination-details' element={<PaginationDetails />} />
         <Route path='/testimonial-details' element={<TestimonialDetails />} />
-          <Route path='/statistic-details' element={<Statistic />} />
-          <Route path='/gallery-details' element={<GalleryDetailsPage />} />
+        <Route path='/faq-details' element={<Faq />} />
+        <Route path='/statistic-details' element={<Statistic />} />
+        <Route path='/gallery-details' element={<GalleryDetailsPage />} />
 
         <Route path='/spinner' element={<SpinnerDetailsPage />} />
 
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
-
       <ConditionalFooter />
-
     </Router>
   );
 };
